@@ -1,0 +1,242 @@
+/****************************************************************************
+ * 
+ * Nathan Tallent
+ * 
+ ****************************************************************************/
+
+/****************************************************************************
+ * Coordination with navigation pane
+ ****************************************************************************/
+
+/* CSS Colors: https://www.w3schools.com/cssref/css_colors.asp */
+
+div#Menu,
+div.map {
+  position: absolute;
+  width: 11em;
+  height: auto;
+  top: 1em; 
+  right: auto;
+  bottom: 1em;
+  left: 1em;
+  background: #DDB  /* url(dogsear.png) bottom right no-repeat */
+}
+
+div#Menu p.navhead, 
+div#Menu a,
+div.map p, 
+div.map li, 
+div.map h2 {
+  display: block;
+  font-size: medium;
+  margin: 0.55em -1em 0.45em 1.5em; /* top, right, bottom, left */
+  padding: 0.4em 1em;
+  text-indent: 0;
+  text-align: left;
+  background: #700; /* reddish... */
+  color: white;
+  border-bottom: none;		/* Remove rule under h2 */
+  list-style: none        /* Remove triangle from h2 */
+}		
+
+div.map li li { /* Nested LIs don't get the dogear */
+  margin: 0;
+  padding: 0;
+  background: #aa7;
+  color: white
+}
+
+div.map > ul {
+  margin: 0;
+  padding: 0 
+}
+
+div#Menu p.navhead {
+  font-weight: bold 
+}
+
+div#Menu a:link, 
+div#Menu a:visited,
+div.map a:link, 
+div.map a:visited {
+  font-style: italic;
+  text-decoration: none;
+  color: white 
+}
+
+div.map a:hover {
+  background: #CCC;
+  color: #000 
+}
+
+div#Menu:before,
+div.map:before {
+  /* content: "Navigation"; */
+  display: block;
+  margin-bottom: 1em;
+  padding: 0.1em 0.5em;
+  color: #999;
+  font-size: larger;
+  font-style: italic;
+  text-align: left;
+  letter-spacing: 0.25em 
+}
+
+
+
+/*
+html {
+  margin: 0 
+}
+*/
+
+
+/* Provide space for menus */
+body {
+  position: relative;
+  padding: 1em 2em 5em 14em; /* top, right, bottom, left */
+  margin: 0em;
+}			
+
+html>body {
+  /* padding-right: 1em; */
+}
+
+
+/****************************************************************************
+ * Classes and Id styles
+ ****************************************************************************/
+
+.indent {
+  margin-left: 4%; /* these can be nested */
+}
+
+
+ol.noindent {
+  margin-left: 1ex;
+  padding-left: 2ex;
+  border-width: 0ex;
+  text-align: left;
+}
+
+ul.noindent {
+  margin-left: 2ex;
+  padding-left: 0ex;
+  border-width: 0ex;
+  list-style: disc outside;
+  text-align: left;
+}
+
+/*
+ul.noindent > li:before {
+  display: marker;
+  marker-offset: 2ex;
+  border-width: 0ex;
+}
+*/
+
+/* (Pseudo) href class
+ */
+.hrefPs {
+  color: blue;
+  text-decoration: none;  
+  background-color: transparent;
+}
+
+
+/****************************************************************************
+ * Block Element styles
+ ****************************************************************************/
+
+head {
+  font-size:100%;
+}
+
+body {
+  font-size: 90%;
+  color: black;
+  background-color: white;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 1em;
+  background-color: transparent;
+}
+
+blockquote {
+  font-family: sans-serif;
+  font-size: 1em;
+  background-color: transparent;
+}
+
+dl {
+  font-family: sans-serif;
+  font-size: 1em;
+  background-color: transparent;
+}
+
+ul {
+  font-family: sans-serif;
+  font-size: 1em;
+  background-color: transparent;
+}
+
+ol {
+  font-family: sans-serif;
+  font-size: 1em;
+}
+
+table {
+  font-family: sans-serif;
+  font-size: 1em;
+}
+
+/****************************************************************************
+ * Inline Element styles
+ ****************************************************************************/
+
+h1 {
+  font-family: sans-serif;
+  font-size: 1.8em;
+  background-color: transparent;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: 1.4em;
+  background-color: transparent;
+}
+
+h3 {
+  font-family: sans-serif;
+  font-size: 1.25em;
+  background-color: transparent;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+h4 {
+  font-family: sans-serif;
+  font-size: 1.1em;
+  background-color: transparent;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+a {
+  text-decoration: none; /* underline */
+  color: #B22222; /* FireBrick */
+  background-color: transparent;
+}
+
+pre, code { 
+  font-family: monospace;
+  font-size: 1em;
+  background-color: transparent; 
+}
+
+img {
+  /*  padding-left: 5px;
+  display: float; */
+}
