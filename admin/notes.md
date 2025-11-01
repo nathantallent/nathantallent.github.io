@@ -32,6 +32,40 @@ Within <www>/style:
   curl -O https://github.com/pcooksey/bibtex-js/blob/master/src/bibtex_js.js
 ```
 
+TEST:
+```
+<h2>***TEST***</h2>
+
+<div class="bibtex_template">
+  <ul> <li>
+
+  <div class="if author" style="font-weight: bold; font-family: sans-serif">
+    <span class="if year">
+      <span class="year"></span>, 
+    </span>
+    <span class="author"></span>
+    <span class="if url" style="margin-left: 20px">
+      <a class="url" style="color:black; font-size:10px">(view online)</a>
+    </span>
+  </div>
+  <div style="margin-left: 10px; margin-bottom:5px;">
+    <span class="title"></span>
+  </div>
+
+  </li></ul>
+
+</div>
+
+
+<!-- <div id="bibtex_display"></div> -->
+
+<div class="bibtex_display" bibtexkey="Mehboob:2025:SOCC-PowerTrip"></div>
+<div class="bibtex_display" bibtexkey="Fu:2025:ICDM-ProHD"></div>
+<div class="bibtex_display" bibtexkey="Sun:2025:SC-PDSW-LLMTailor"></div>
+<div class="bibtex_display" bibtexkey="Guo:2024:BPOD-fastflow-vision"></div>
+
+```
+
 
 Generating Static HTML from BibTeX
 =============================================================================
