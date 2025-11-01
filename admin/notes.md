@@ -7,12 +7,30 @@ Interactive HTML editor/generator
 
   Canva
 
-Generating HTML from BibTeX
+
+Generating Dynamic HTML from BibTeX
 =============================================================================
 
 bibtex-js: https://github.com/pcooksey/bibtex-js
 
 citation.js: https://citation.js.org
+
+
+bibtex-js
+----------------------------------------
+
+Serve local HTML site:
+  1. `python3 -m http.server 8000`
+  2. Navigate to: http://localhost:8000/
+  
+
+Within <www>/style:
+```
+  cp ~/1research/1me-archive.github/cv/texmf/bibtex/bib/pubs.bib ~/1research/1me-www.github/bib/pubs.bib
+  
+  cd ~/1research/1me-www.github/style/
+  curl -O https://github.com/pcooksey/bibtex-js/blob/master/src/bibtex_js.js
+```
 
 
 Generating Static HTML from BibTeX

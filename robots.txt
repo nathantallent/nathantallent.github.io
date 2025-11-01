@@ -5,6 +5,7 @@
 User-agent: *
 
 Disallow: /admin
+Disallow: /bib
 Disallow: /cv
 Disallow: /fig
 Disallow: /style
