@@ -2,20 +2,62 @@
 
 <meta name="robots" content="noindex, nofollow">
 
-
-Jekyll
+Interactive HTML editor/generator
 =============================================================================
 
-What are all the steps required to create a new jekyll site from the Hyde theme that is based on Poole?
+  Canva
 
-To create a new jekyll site from the Hyde theme do you need to clone Poole first?
+Generating HTML from BibTeX
+=============================================================================
 
+bibtex-js: https://github.com/pcooksey/bibtex-js
+
+citation.js: https://citation.js.org
+
+
+Generating Static HTML from BibTeX
+=============================================================================
+
+Summary:
+----------------------------------------
+- bib2xhtml:
+  Inserts BibTeX references *as inlined html* from html-based macros
+
+- bibtex2html:
+  Converts BibTeX to html file, which can be merged into a master html.
+
+- bibtex2web:
+  Converts BibTeX to html file, 
+
+
+bib2xhtml
+----------------------------------------
+  Source: https://www.spinellis.gr/sw/textproc/bib2xhtml/
+  Note: bib2xhtml supports 'pdf' and 'url' fields.
+  
+```
+  pushd /opt/tallent/bib2xhtml/<bib2xhtml> # Invoke from within source!
+  export MYBIB="$HOME/1research/1me-archive.github/cv/texmf/bibtex/bib/pubs.bib"
+  export MYHTML="$HOME/1research/1me-www.github/research.html"
+  ./bib2xhtml -s unsort -i -n Tallent -d pubs-selected ${MYBIB} ${MYHTML}
+
+  #./bib2xhtml -s unsort -i -n Tallent -d pubs-other   ${MYBIB} ${MYHTML}
+```
+
+
+Jekyll: Generate static HTML from markdown + template
+=============================================================================
 
 Install Ruby
 ----------------------------------------
 
+Cf: https://kinsta.com/blog/jekyll-static-site/
 
   ```
+  brew doctor
+  brew install chruby ruby-install
+  ruby-install <version> # replace <version>
+  
   source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh
   source $(brew --prefix)/opt/chruby/share/chruby/auto.sh
   chruby ruby-3.4.7
