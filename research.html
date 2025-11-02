@@ -22,9 +22,64 @@
 
 <script language="JavaScript" type="text/javascript" src="style/navigation-map.js"></script>
 
+<!-- ********************************************************************** -->
+
 <script type="text/javascript" src="style/bibtex_js.js"></script>
 
 <bibtex src="bib/pubs.bib"></bibtex>
+
+<!-- TODO: highlight one author; add best paper refs -->
+
+<div class="bibtex_template">
+  <ul>
+    <li>
+      <span class="year" style="font-weight: bold"></span>.
+      <span class="author"></span>.
+      <br />
+
+      <span class="title" style="font-weight: bold"></span>.
+      <br />
+
+      <span class="if booktitle">
+        <span class="booktitle" style="font-style: italic"></span>.
+      </span>
+      <span class="if journal">
+        <span class="journal"></span>,
+        vol. <span class="volume"></span><span class="if number">(<span class="number"></span>)</span>,
+      </span>
+
+      <span class="if month">
+        <span class="month"></span>,
+      </span>
+      <span class="year"></span>.
+      <span class="if pages">
+        pp. <span class="pages"></span>.
+      </span>
+      <span class="if publisher">
+        <span class="publisher"></span>
+      </span>
+      <br />
+
+      <div class="if url">
+        <a class="bibtexVar" href="+URL+" extra="url">
+          <span class="url"></span>
+        </a>
+      </div>
+      <div class="if !url">
+        <div class="if doi">
+          <a class="bibtexVar" href="http://dx.doi.org/+DOI+" extra="doi">
+            https://dx.doi.org/<span class="doi"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="if note">
+      </div>
+
+    </li>
+  </ul>
+</div>
+
 
 <!-- ********************************************************************** -->
 
@@ -60,114 +115,84 @@
 
 <h2>Selected publications</h2>
 
-<!-- publisher // highlight one author; add best paper refs -->
-
-<div class="bibtex_template">
-  <ul>
-    <li>
-      <span class="year" style="font-weight: bold"></span>.
-      <span class="author"></span>.
-      <br />
-
-      <span class="title" style="font-weight: bold"></span>.
-      <br />
-
-      <span class="if booktitle">
-        <span class="booktitle" style="font-style: italic"></span>.
-      </span>
-      <span class="if journal">
-        <span class="journal"></span>,
-        vol. <span class="volume"></span><span class="if number">(<span class="number"></span>)</span>,
-      </span>
-
-      <span class="if month">
-        <span class="month"></span>,
-      </span>
-      <span class="year"></span>.
-      <span class="if pages">
-        pp. <span class="pages"></span>,
-      </span>
-      <span class="if publisher">
-        <span class="publisher"></span>
-      </span>
-      <br />
-
-      <div class="if url">
-        <a class="bibtexVar" href="+URL+" extra="url">
-          <span class="url"></span>
-        </a>
-      </div>
-      <div class="if !url">
-        <div class="if doi">
-          <a class="bibtexVar" href="http://dx.doi.org/+DOI+" extra="doi">
-            https://dx.doi.org/<span class="doi"></span>
-          </a>
-        </div>
-      </div>
-
-      <div class="if note">
-        
-      </div>
-
-    </li>
-  </ul>
-</div>
-
 <!-- <div id="bibtex_display"></div> -->
+
+<div class="indent">
+
+<p>Research on performance measurement, analysis, modeling (processors, storage, memory, networks) for<br />
+
+  [<a href="#pubs-workflows">Scientific Workflows</a>]
+  [<a href="#pubs-aisys">AI Systems</a>]
+  [<a href="#pubs-codesign">HW/Sw Co-design</a>]
+  [<a href="#pubs-perftool">Analysis and Modeling</a>]
+  [<a href="#pubs-bench">Benchmarking</a>]
+</p>
+
+
+<h4 id="pubs-workflows">Distributed Scientific Workflows (performance modeling, data movement, networking, storage)</h4>
+
+<div class="bibtex_display" bibtexkey="Tang:2025:SC-PDSW-AWSGw"></div>
+<div class="bibtex_display" bibtexkey="Firoz:2025:SSDBM-fastflow"></div>
+<div class="bibtex_display" bibtexkey="Lee:2025:IPDPS-flowforecaster"></div>
+<div class="bibtex_display" bibtexkey="Zhang-Fang:2025:ICS-bmqsim"></div>
+<div class="bibtex_display" bibtexkey="Newaz:2025:IPDPS-locality-aware-graph-remapping"></div>
+<div class="bibtex_display" bibtexkey="Guo:2024:BPOD-fastflow-vision"></div>
+<div class="bibtex_display" bibtexkey="Egersdoerfer-Fang:2024:SC-PDSW-cross-app-io-interference"></div>
+<div class="bibtex_display" bibtexkey="Tang:2024:CLUSTER-dayu"></div>
+<div class="bibtex_display" bibtexkey="Lee:2023:SC-datalife-dataflowlifecycles"></div>
+<div class="bibtex_display" bibtexkey="Bel:2021:BigData-BPOD-winnow-ml"></div>
+<div class="bibtex_display" bibtexkey="Bel:2021:diolkos"></div>
+<div class="bibtex_display" bibtexkey="Friese:2020:BigData-tazer-io-composition"></div>
+<div class="bibtex_display" bibtexkey="Bel:2020:MSST-geomancy"></div>
+<div class="bibtex_display" bibtexkey="Suetterlein:2019:BigData-tazer"></div>
+<div class="bibtex_display" bibtexkey="Schram:2019:CHEP-dl-workflows"></div>
+<div class="bibtex_display" bibtexkey="Bhuiyan:2019:LNCS-JSSPP-resource-selection-uncertainty"></div>
+<div class="bibtex_display" bibtexkey="Singh:2018:BPOD-dl-workflow-faults"></div>
+<div class="bibtex_display" bibtexkey="Friese:2018:CLUSTER-optimizing-workflows"></div>
+<div class="bibtex_display" bibtexkey="Schram:2017:JPhys-chep"></div>
+<div class="bibtex_display" bibtexkey="Halappanavar:2015:WORKS-workflow-scheduling"></div>
+
+
+<h4 id="pubs-aisys">Distributed AI Systems and Data Analytics (performance modeling, memory, networking, storage)</h4>
 
 <div class="bibtex_display" bibtexkey="Mehboob:2025:SOCC-PowerTrip"></div>
 <div class="bibtex_display" bibtexkey="Fu:2025:ICDM-ProHD"></div>
 <div class="bibtex_display" bibtexkey="Sun:2025:SC-PDSW-LLMTailor"></div>
-<div class="bibtex_display" bibtexkey="Tang:2025:SC-PDSW-AWSGw"></div>
-<div class="bibtex_display" bibtexkey="Zhang-Fang:2025:ICS-bmqsim"></div>
-<div class="bibtex_display" bibtexkey="Firoz:2025:SSDBM-fastflow"></div>
-<div class="bibtex_display" bibtexkey="Lee:2025:IPDPS-flowforecaster"></div>
-<div class="bibtex_display" bibtexkey="Newaz:2025:IPDPS-locality-aware-graph-remapping"></div>
 <div class="bibtex_display" bibtexkey="Abebe:2025:SamIAm-semantic-boosting"></div>
-<div class="bibtex_display" bibtexkey="Guo:2024:BPOD-fastflow-vision"></div>
-<div class="bibtex_display" bibtexkey="Egersdoerfer-Fang:2024:SC-PDSW-cross-app-io-interference"></div>
-<div class="bibtex_display" bibtexkey="Hou:2024:ISNCC-near-data"></div>
-<div class="bibtex_display" bibtexkey="Suetterlein:2024:hpec-auto-network-config"></div>
-<div class="bibtex_display" bibtexkey="Suriyakumar:2024:memfriend-spatial-affinity"></div>
 <div class="bibtex_display" bibtexkey="Sarkar:2024:CLUSTER-massive-gnn"></div>
-<div class="bibtex_display" bibtexkey="Tang:2024:CLUSTER-dayu"></div>
-<div class="bibtex_display" bibtexkey="Newaz:2024:IPDPS-jellyfish-graph-analytics"></div>
-<div class="bibtex_display" bibtexkey="Lee:2023:SC-datalife-dataflowlifecycles}
 <div class="bibtex_display" bibtexkey="Chen:2023:JPDC-bitgraphblas"></div>
-<div class="bibtex_display" bibtexkey="Kilic:2022:CLUSTER-memgaze"></div>
-<div class="bibtex_display" bibtexkey="Sathanur:2022:learning"></div>
 <div class="bibtex_display" bibtexkey="Chen:2022:IPDPS-bitgraphblas"></div>
-<div class="bibtex_display" bibtexkey="Bel:2021:BigData-BPOD-winnow-ml"></div>
+
+
+<h4 id="pubs-codesign">Hardware/Software Co-design (memory, networks, storage)</h4>
+
+<div class="bibtex_display" bibtexkey="Hou:2024:ISNCC-near-data"></div>
+<div class="bibtex_display" bibtexkey="Suriyakumar:2024:memfriend-spatial-affinity"></div>
+<div class="bibtex_display" bibtexkey="Newaz:2024:IPDPS-jellyfish-graph-analytics"></div>
+<div class="bibtex_display" bibtexkey="Kilic:2022:CLUSTER-memgaze"></div>
 <div class="bibtex_display" bibtexkey="Ghosh:2021:SC-optane-graph-analytics"></div>
-<div class="bibtex_display" bibtexkey="Ghosh:2021:TPDS-graph-neighborhood-comm"></div>
-<div class="bibtex_display" bibtexkey="Bel:2021:diolkos"></div>
-<div class="bibtex_display" bibtexkey="Friese:2020:BigData-tazer-io-composition"></div>
-<div class="bibtex_display" bibtexkey="Barik:2020:IISWC-vertex-reordering"></div>
-<div class="bibtex_display" bibtexkey="Bel:2020:MSST-geomancy"></div>
 <div class="bibtex_display" bibtexkey="Kilic:2020:ISPASS-footprint-access-patterns"></div>
-<div class="bibtex_display" bibtexkey="Li:2020:TPDS-gpu-interconnect"></div>
-<div class="bibtex_display" bibtexkey="Suetterlein:2019:BigData-tazer"></div>
 <div class="bibtex_display" bibtexkey="Kilic:2019:HPCMASPA-loop-footprints"></div>
-<div class="bibtex_display" bibtexkey="Schram:2019:CHEP-dl-workflows"></div>
-<div class="bibtex_display" bibtexkey="Bhuiyan:2019:LNCS-JSSPP-resource-selection-uncertainty"></div>
-<div class="bibtex_display" bibtexkey="Singh:2018:BPOD-dl-workflow-faults"></div>
+
+
+<h4 id="pubs-perftool">Performance Analysis and Modeling (processors, memory, networking)</h4>
+
+<div class="bibtex_display" bibtexkey="Suetterlein:2024:hpec-auto-network-config"></div>
+<div class="bibtex_display" bibtexkey="Sathanur:2022:qualm"></div>
+<div class="bibtex_display" bibtexkey="Ghosh:2021:TPDS-graph-neighborhood-comm"></div>
+<div class="bibtex_display" bibtexkey="Barik:2020:IISWC-vertex-reordering"></div>
+<div class="bibtex_display" bibtexkey="Li:2020:TPDS-gpu-interconnect"></div>
 <div class="bibtex_display" bibtexkey="Li:2018:IISWC-tartan"></div>
-<div class="bibtex_display" bibtexkey="Friese:2018:CLUSTER-optimizing-workflows"></div>
 <div class="bibtex_display" bibtexkey="Gawande:2018:FGCS-dgx1-vs-knl"></div>
 <div class="bibtex_display" bibtexkey="Tallent:2017:SC-representative-paths"></div>
 <div class="bibtex_display" bibtexkey="Tallent:2017:SC-PMBS-gpu-interconnects"></div>
-<div class="bibtex_display" bibtexkey="Schram:2017:JPhys-chep"></div>
 <div class="bibtex_display" bibtexkey="Friese-Tallent:2017:IPDPS-modeling-irregular-apps"></div>
 <div class="bibtex_display" bibtexkey="Tallent:2016:NAS-siphon"></div>
-<div class="bibtex_display" bibtexkey="Tallent:2016:IPDPS-seak"></div>
-<div class="bibtex_display" bibtexkey="Vishnu:2016:IPDPS-app-fault-tolerance"></div>
-<div class="bibtex_display" bibtexkey="Halappanavar:2015:WORKS-workflow-scheduling"></div>
-<div class="bibtex_display" bibtexkey="Venkatesh:2015:SC-energy-efficient-mpi"></div>
 <div class="bibtex_display" bibtexkey="Gawande:2015:ASAP-stap-power-perf"></div>
+
 <div class="bibtex_display" bibtexkey="Tallent:2015:PPoPP-onesided-network-contention"></div>
 <div class="bibtex_display" bibtexkey="Tallent:2014:highlights-palm"></div>
 <div class="bibtex_display" bibtexkey="Tallent-Hoisie:2014:ICS-palm"></div>
-<div class="bibtex_display" bibtexkey="perfect-suite-man:2013"></div>
 <div class="bibtex_display" bibtexkey="Liu-MC-Tall:2012:hpctoolkit-SCC"></div>
 <div class="bibtex_display" bibtexkey="Tallent-MC:2012:PTools-hpctoolkit-sampling"></div>
 <div class="bibtex_display" bibtexkey="Tallent-Kerbyson:2012:WHIST-hpctoolkit-data-centric-tracing"></div>
@@ -184,16 +209,27 @@
 <div class="bibtex_display" bibtexkey="Tallent:2008:SciDAC-hpctoolkit"></div>
 <div class="bibtex_display" bibtexkey="Adhianto:2008:SC-NLPLSS-hpctoolkit"></div>
 <div class="bibtex_display" bibtexkey="MellorCrummey-Ta:2008:ISPASS-TIMERS-methodology"></div>
-<div class="bibtex_display" bibtexkey="Utke:2008:TOMS-OpenAD"></div>
 <div class="bibtex_display" bibtexkey="Froyd-Ta-MC-Fo:2006:GCCSummit-csprof"></div>
 <div class="bibtex_display" bibtexkey="MellorCrummey-Fo-Ma-Ta:2002:JoSC-hpcview"></div>
+
+
+<h4 id="pubs-bench">Workload Benchmarking and Characterization (performance and faults)</h4>
+
+<div class="bibtex_display" bibtexkey="Tallent:2016:IPDPS-seak"></div>
+<div class="bibtex_display" bibtexkey="Vishnu:2016:IPDPS-app-fault-tolerance"></div>
+<div class="bibtex_display" bibtexkey="perfect-suite-man:2013"></div>
+
+
+<div class="bibtex_display" bibtexkey="Venkatesh:2015:SC-energy-efficient-mpi"></div>
+
+<div class="bibtex_display" bibtexkey="Utke:2008:TOMS-OpenAD"></div>
+
+</div>
 
 
 <!-- ********************************************************************** -->
 
 <script language="JavaScript"  type="text/javascript" src="style/footer.js"></script>
-
-<p>(Made with <a href="http://www.spinellis.gr/sw/textproc/bib2xhtml/">bib2xhtml</a>.)</p>
 
 </body>
 </html>
