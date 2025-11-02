@@ -36,26 +36,35 @@ TEST:
 ```
 <h2>***TEST***</h2>
 
-<div class="bibtex_template">
+<div class="bibtex_template" style="font-family: sans-serif">
   <ul> <li>
+      <span class="year" style="font-weight: bold"></span>.
+      <span class="author"></span>.<br />
+      <span class="title" style="font-weight: bold"></span>.<br />
+      <span class="booktitle" style="font-style: italic"></span>.
 
-  <div class="if author" style="font-weight: bold; font-family: sans-serif">
-    <span class="if year">
-      <span class="year"></span>, 
-    </span>
-    <span class="author"></span>
-    <span class="if url" style="margin-left: 20px">
-      <a class="url" style="color:black; font-size:10px">(view online)</a>
-    </span>
-  </div>
-  <div style="margin-left: 10px; margin-bottom:5px;">
-    <span class="title"></span>
-  </div>
+      <span class="if journal" style="">
+        <span class="journal"></span>,
+        <span class="volume"></span>(<span class="number"></span>):
+      </span>
+      <span class="if month">
+        <span class="month"></span>,
+      </span>
+      <span class="year"></span>.
+      <span class="if pages">
+        <span class="pages"></span>
+      </span>
+      
+      <span class="if url" style="">
+        <a class="url">(online)</a>
+      </span>
+      <span class="if doi" style="">
+        <a class="doi">(doi)</a>
+      </span>
 
   </li></ul>
 
 </div>
-
 
 <!-- <div id="bibtex_display"></div> -->
 
@@ -79,7 +88,11 @@ Summary:
   Converts BibTeX to html file, which can be merged into a master html.
 
 - bibtex2web:
-  Converts BibTeX to html file, 
+  Converts BibTeX to html file
+ 
+- Similarly cumbersome solutions with python:
+  https://marcel.bollmann.me/blog/turning-bibtex-into-bibliographies-with-python/
+  https://pypi.org/project/bibtex2html.py/
 
 
 bib2xhtml
