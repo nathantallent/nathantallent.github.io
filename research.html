@@ -56,24 +56,24 @@
         pp. <span class="pages"></span>.
       </span>
       <span class="if publisher">
-        <span class="publisher"></span>
+        <span class="publisher"></span>.
       </span>
       <br />
 
+      <!-- <div class="if !url"> </div> -->
+      <div class="if doi">
+        <a class="bibtexVar" href="http://dx.doi.org/+DOI+" extra="doi">
+          https://dx.doi.org/<span class="doi"></span>
+        </a>
+      </div>
       <div class="if url">
         <a class="bibtexVar" href="+URL+" extra="url">
           <span class="url"></span>
         </a>
       </div>
-      <div class="if !url">
-        <div class="if doi">
-          <a class="bibtexVar" href="http://dx.doi.org/+DOI+" extra="doi">
-            https://dx.doi.org/<span class="doi"></span>
-          </a>
-        </div>
-      </div>
 
       <div class="if note">
+        <!-- TODO -->
       </div>
 
     </li>
@@ -128,7 +128,7 @@ Sections:
   [<a href="#pubs-bench">Benchmarking</a>]
 </p>
 
-<h4 id="pubs-aisys">Distributed AI Systems and Data Analytics (performance modeling, memory, networking, storage)</h4>
+<h4 id="pubs-aisys">Distributed AI Systems and Data Analytics (performance modeling; memory, networking, storage; power)</h4>
 
 <div class="bibtex_display" bibtexkey="Mehboob:2025:SOCC-PowerTrip"></div>
 <div class="bibtex_display" bibtexkey="Fu:2025:ICDM-ProHD"></div>
@@ -139,7 +139,7 @@ Sections:
 <div class="bibtex_display" bibtexkey="Chen:2022:IPDPS-bitgraphblas"></div>
 
 
-<h4 id="pubs-workflows">Distributed Scientific Workflows (performance modeling, data movement, networking, storage)</h4>
+<h4 id="pubs-workflows">Distributed Scientific Workflows (performance modeling; data movement; networking, storage)</h4>
 
 <div class="bibtex_display" bibtexkey="Tang:2025:SC-PDSW-AWSGw"></div>
 <div class="bibtex_display" bibtexkey="Firoz:2025:SSDBM-fastflow"></div>
@@ -192,7 +192,6 @@ Sections:
 <div class="bibtex_display" bibtexkey="Venkatesh:2015:SC-energy-efficient-mpi"></div>
 <div class="bibtex_display" bibtexkey="Gawande:2015:ASAP-stap-power-perf"></div>
 <div class="bibtex_display" bibtexkey="Tallent:2015:PPoPP-onesided-network-contention"></div>
-<div class="bibtex_display" bibtexkey="Tallent:2014:highlights-palm"></div>
 <div class="bibtex_display" bibtexkey="Tallent-Hoisie:2014:ICS-palm"></div>
 <div class="bibtex_display" bibtexkey="Liu-MC-Tall:2012:hpctoolkit-SCC"></div>
 <div class="bibtex_display" bibtexkey="Tallent-MC:2012:PTools-hpctoolkit-sampling"></div>
