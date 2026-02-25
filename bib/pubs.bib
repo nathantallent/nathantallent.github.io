@@ -1,12 +1,42 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Nathan R. Tallent at 2026-02-24 10:03:54 -0800 
+%% Created for Nathan R. Tallent at 2026-02-25 09:53:21 -0800 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@inproceedings{Faykus:2025:IPDPS-HPAI4S-llm-compression,
+	author = {Max H. Faykus and Luanzheng Guo and Rizwan A. Ashraf and Nathan R. Tallent and Jon C. Calhoun},
+	booktitle = {IEEE Intl. Workshop on HPC for AI Foundation Models and LLMs for Science (co-located with 39th IEEE Intl. Parallel and Distributed Processing Symp.)},
+	date-added = {2026-02-25 08:54:28 -0800},
+	date-modified = {2026-02-25 09:00:19 -0800},
+	doi = {10.1109/IPDPSW66978.2025.00153},
+	month = {6},
+	pages = {986-990},
+	publisher = {IEEE Computer Society},
+	series = {IPDPS Workshops '25},
+	title = {Exploration of {LLM} Lossless Compression on Scientific Data},
+	year = {2025},
+	bdsk-url-1 = {https://doi.org/10.1109/IPDPSW66978.2025.00153}}
+
+@inproceedings{Mehboob:2025:SOCC-PowerTrip,
+	abstract = {The exponential growth of large-scale AI models has led to computational and power demands that can exceed the capacity of a single data center. This is due to the limited power supplied by regional grids that leads to limited regional computational power. Consequently, distributing training workloads across geographically distributed sites has become essential. However, this approach introduces a significant challenge in the form of communication overhead, creating a fundamental trade-off between the performance gains from accessing greater aggregate power and the performance losses from increased network latency. Although prior work has focused on reducing communication volume or using heuristics for distribution, these methods assume constant homogeneous power supplies and ignore the challenge of heterogeneous power availability between sites.To address the challenge of training large models in power-constrained, geo-distributed environments, we introduce PowerTrip, a system that dynamically selects a subset of sites during runtime to optimize the power-communication trade-off. Specifically, PowerTrip selects sites based on a power-to-cost heuristic, prioritizing those with high power availability and low network latency. PowerTrip employs a dynamic greedy approach and uses the marginal gain in training efficiency, i.e., accuracy improvement per unit of time, to optimize for the number of sites where the performance penalty from network overhead negates the benefit of adding more computational power. Our evaluation, which uses real-world Google power traces to model realistic power capacity constraints, demonstrates that PowerTrip can reduce time-to-accuracy by up to 50\% compared to existing baseline policies.},
+	address = {New York, NY, USA},
+	author = {Talha Mehboob and Luanzheng Guo and Nathan R. Tallent and Michael Zink and David Irwin},
+	booktitle = {Proc. of the 2025 ACM Symposium on Cloud Computing},
+	date-added = {2026-02-25 08:50:32 -0800},
+	date-modified = {2026-02-25 08:52:50 -0800},
+	doi = {10.1145/3772052.3772228},
+	month = {11},
+	pages = {762--775},
+	publisher = {Association for Computing Machinery},
+	series = {SoCC '25},
+	title = {{PowerTrip}: Exploiting Federated Heterogeneous Datacenter Power for Distributed {ML} Training},
+	year = {2025},
+	bdsk-url-1 = {https://doi.org/10.1145/3772052.3772228}}
 
 @inproceedings{Sarkar:2026:ICS-rudder,
 	address = {New York, NY, USA},
@@ -92,17 +122,6 @@ https://hpcrl.github.io/ICS2025-webpage/
 	title = {{DataFlowDrs}: Automating Performance Optimization of Data Flow Within {HPC} Workflows},
 	year = {2027}}
 
-@inproceedings{Mehboob:2025:SOCC-PowerTrip,
-	author = {Talha Mehboob and Luanzheng Guo and Nathan R. Tallent and Michael Zink and David Irwin},
-	booktitle = {Proc. of the 16th ACM Symposium on Cloud Computing},
-	date-added = {2025-09-26 12:49:19 -0700},
-	date-modified = {2026-01-13 09:07:41 -0800},
-	doi = {10.1145/3772052.3772228},
-	month = {11},
-	title = {{PowerTrip}: Exploiting Federated Heterogeneous Datacenter Power for Distributed {ML} Training},
-	year = {2025},
-	bdsk-url-1 = {https://doi.org/10.1145/3772052.3772228}}
-
 @inproceedings{Tang:2025:SC-PDSW-AWS-SG,
 	address = {New York, NY, USA},
 	author = {Meng Tang and Zhaobin Zhu and Luanzheng Guo and James G. Bandy and Tim Carlson and Sarah Neuwirth and Anthony Kougkas and Xian-He Sun and Nathan R. Tallent},
@@ -122,11 +141,12 @@ https://hpcrl.github.io/ICS2025-webpage/
 	author = {Minqiu Sun and Xin Huang and Luanzheng Guo and Nathan R. Tallent and Kento Sato and Dong Dai},
 	booktitle = {Proc. of the SC '25 Workshops of the Intl. Conf. for High Performance Computing, Networking, Storage and Analysis (10th Intl Parallel Data Systems Workshop)},
 	date-added = {2025-09-06 14:40:32 -0700},
-	date-modified = {2025-11-07 13:44:30 -0800},
+	date-modified = {2026-02-25 08:59:26 -0800},
 	doi = {10.1145/3731599.3767515},
 	month = {11},
 	pages = {1366--1374},
 	publisher = {Association for Computing Machinery},
+	series = {SC Workshops '25},
 	title = {{LLMTailor}: A Layer-wise Tailoring Tool for Efficient Checkpointing of Large Language Models},
 	year = {2025},
 	bdsk-url-1 = {https://doi.org/10.1145/3731599.3767515}}
@@ -151,18 +171,6 @@ https://hpcrl.github.io/ICS2025-webpage/
 	url = {https://arxiv.org/abs/2506.15844},
 	year = {2025},
 	bdsk-url-1 = {https://arxiv.org/abs/2506.15844}}
-
-@inproceedings{10825855,
-	author = {Guo, Luanzheng and Tang, Meng and Lee, Hyungro and Firoz, Jesun and Tallent, Nathan R.},
-	booktitle = {2024 IEEE International Conference on Big Data (BigData)},
-	date-added = {2025-03-10 15:39:14 -0700},
-	date-modified = {2025-03-10 15:39:14 -0700},
-	doi = {10.1109/BigData62323.2024.10825855},
-	keywords = {Concurrent computing;Processor scheduling;Scientific computing;Genomics;Bandwidth;Parallel processing;Scheduling;Time factors;Resource management;Optimization},
-	pages = {3674-3681},
-	title = {Improving I/O-aware Workflow Scheduling via Data Flow Characterization and trade-off Analysis},
-	year = {2024},
-	bdsk-url-1 = {https://doi.org/10.1109/BigData62323.2024.10825855}}
 
 @inproceedings{Hoang:2024:SC-poster:llm-profiling,
 	annote = {https://sc24.supercomputing.org/proceedings/poster/poster_files/post269s2-file3.pdf
@@ -286,10 +294,12 @@ https://doi.org/10.48550/arXiv.2410.16093
 	author = {Guo, Luanzheng and Tang, Meng and Lee, Hyungro and Firoz, Jesun and Tallent, Nathan R.},
 	booktitle = {Seventh IEEE Intl. Workshop on Benchmarking, Performance Tuning and Optimization for Big Data Applications (Proc. of the IEEE Intl. Conf. on Big Data)},
 	date-added = {2024-10-04 11:09:37 -0500},
-	date-modified = {2025-05-09 13:15:39 -0700},
+	date-modified = {2026-02-25 09:53:05 -0800},
 	doi = {10.1109/BigData62323.2024.10825855},
 	month = {12},
 	organization = {IEEE Computer Society},
+	pages = {3674-3681},
+	series = {Big Data Workshops '24},
 	title = {Improving {I/O}-aware Workflow Scheduling via Data Flow Characterization and Trade-off Analysis},
 	year = {2024},
 	bdsk-url-1 = {https://doi.org/10.1145/3581784.3607104},
@@ -390,24 +400,15 @@ Pacific Northwest National Laboratory},
 	volume = {40},
 	year = {2026}}
 
-@inproceedings{Faykus:2025:IPDPS-HPAI4S-llm-compression,
-	author = {Max H. {Faykus III} and Luanzheng Guo and Rizwan A. Ashraf and Nathan R. Tallent and Jon C. Calhoun},
-	booktitle = {IEEE Intl. Workshop on HPC for AI Foundation Models and LLMs for Science (co-located with 39th IEEE Intl. Parallel and Distributed Processing Symp.)},
-	date-added = {2024-08-19 10:04:26 -0700},
-	date-modified = {2025-11-18 08:37:07 -0600},
-	month = {6},
-	publisher = {IEEE Computer Society},
-	title = {Exploration of {LLM} Lossless Compression on Scientific Data},
-	year = {2025}}
-
 @inproceedings{Naraparajua:2024:SC-DRBSD-compression-roofline,
 	author = {Ramasoumya Naraparaju and Tianyu Zhao and Yanting Hu and Dongfang Zhao and Luanzheng Guo and Nathan R. Tallent},
 	booktitle = {Proc. of the Workshops of the Intl. Conf. for High Performance Computing, Networking, Storage and Analysis (10th Intl. Workshop on Data Analysis and Reduction for Big Scientific Data)},
 	date-added = {2024-08-19 10:03:16 -0700},
-	date-modified = {2025-06-13 07:54:06 -0700},
+	date-modified = {2026-02-25 09:52:10 -0800},
 	doi = {10.1109/SCW63240.2024.00047},
 	month = {11},
 	publisher = {ACM},
+	series = {SC Workshops '24},
 	title = {Shifting Between Compute and Memory Bounds: A Compression-Enabled Roofline Model},
 	url = {https://ieeexplore.ieee.org/abstract/document/10820637},
 	year = {2024},
@@ -605,12 +606,13 @@ https://hpcrl.github.io/ICS2025-webpage/
 	author = {Jesun Firoz and Hyungro Lee and Luanzheng Guo and Meng Tang and Nathan R. Tallent and Zhen Peng},
 	booktitle = {Proc. of the 37th Intl. Conf. on Scalable Scientific Data Management},
 	date-added = {2024-01-25 15:38:42 -0800},
-	date-modified = {2025-11-02 09:06:24 -0800},
+	date-modified = {2026-02-25 09:46:55 -0800},
 	doi = {10.1145/3733723.3733735},
 	month = {6},
 	note = {\textbf{Best Paper Nominee}},
 	pages = {1--12},
 	publisher = {ACM},
+	series = {SSDBM '25},
 	title = {FastFlow: Rapid Workflow Response by Prioritizing Critical Data Flows and their Interactions},
 	year = {2025},
 	bdsk-url-1 = {https://doi.org/10.1145/3733723.3733735}}
@@ -897,10 +899,11 @@ Pacific Northwest National Laboratory},
 	author = {Bel, Oceane and Mukhopadhyay, Sinjoni and Tallent, Nathan R. and Nawab, Faisal and Long, Darrell},
 	booktitle = {Proc. of the 2021 IEEE Intl. Conf. on Big Data (Fifth IEEE Intl. Workshop on Benchmarking, Performance Tuning and Optimization for Big Data Applications)},
 	date-added = {2021-01-18 15:47:11 -0800},
-	date-modified = {2022-04-12 14:18:59 -0700},
+	date-modified = {2026-02-25 09:51:38 -0800},
 	doi = {10.1109/BigData52589.2021.9671602},
 	month = {12},
 	pages = {3031--3041},
+	series = {Big Data Workshops '21},
 	title = {{WinnowML}: Stable feature selection for maximizing prediction accuracy of time-based system modeling},
 	year = {2021},
 	bdsk-url-1 = {https://doi.org/10.1109/BigData52589.2021.9671602}}
@@ -1053,10 +1056,11 @@ Pacific Northwest National Laboratory},
 	author = {Singh, Alok and Altintas, Ilkay and Schram, Malachi and Tallent, Nathan},
 	booktitle = {Second IEEE Intl. Workshop on Benchmarking, Performance Tuning and Optimization for Big Data Applications (Proc. of the IEEE Intl. Conf. on Big Data)},
 	date-added = {2019-02-27 09:29:21 -0800},
-	date-modified = {2019-02-27 09:32:52 -0800},
+	date-modified = {2026-02-25 09:51:07 -0800},
 	doi = {10.1109/BigData.2018.8622509},
 	month = {12},
 	pages = {3905--3914},
+	series = {Big Data Workshops '18},
 	title = {Deep Learning for Enhancing Fault Tolerant Capabilities of Scientific Workflows},
 	year = {2018},
 	bdsk-url-1 = {https://doi.org/10.1109/BigData.2018.8622509}}
