@@ -2,10 +2,9 @@
 document.write('\
   <div> \
   <hr /> \
-  <p style="margin: 0px;" > \
-    <a href="https://validator.w3.org/check/referer">[validate]</a> \
-    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhpc.pnnl.gov%2Fpeople%2Ftallent%2F&profile=css3svg&usermedium=all&warning=1"> \
-      <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="" height="15" /></a> \
+  <p style="margin: 0px;" > validate \
+    <a href="https://validator.w3.org/check/referer">[html]</a> \
+    <a href="https://jigsaw.w3.org/css-validator/validator?">[css]</a> \
   </p> \
   </div> \
 ');
