@@ -237,6 +237,7 @@ pre, code {
 }
 
 img {
+  border: 0;
   /*  padding-left: 5px;
   display: float; */
 }
