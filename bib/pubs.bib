@@ -1,12 +1,26 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Nathan R. Tallent at 2026-05-19 14:16:30 -0700 
+%% Created for Nathan R. Tallent at 2026-05-23 09:41:57 -0700 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{Gajaria:2026:Frontiers-mem-centric-analysis,
+	abstract = {IntroductionThe memory wall phenomenon---where advances in processor performance significantly outpace those in memory subsystems-poses a fundamental challenge for contemporary computing systems. In memory-bound applications, memory subsystem behavior dominates performance, yet existing analysis approaches present significant limitations: detailed microarchitectural simulators require days to weeks to simulate modest workloads; hardware performance counters provide only aggregate statistics that obscure temporal and spatial access patterns; and scaled simulation approaches face challenges in capturing contention effects, bandwidth saturation, and interference patterns that emerge at larger scales. These limitations reflect a processor-centric design philosophy---in both performance analysis tools and system co-design methodologies---that is increasingly misaligned with memorybound workloads, where a detailed understanding of memory access patterns, cache hierarchy interactions, and contention is critical for effective optimization.MethodsThis paper presents an integrated framework for memory-centric analysis that enables effective hardware-software co-design. We describe practical trace collection techniques, including hardware assisted processor tracing with minimal overhead and portable software-based instrumentation with statistical sampling. We present multi-perspective analysis methods that examine memory behavior from temporal, sequential, spatial, and relational viewpoints, revealing distinct optimization opportunities invisible in aggregate metrics. For example, a data structure switch from an open to a closed hash table in the miniVite graph application---guided by spatial anticipation metrics---improved hardware prefetcher utilization and delivered a 1.8 × runtime improvement, a benefit invisible to aggregate performance counters. We detail an architectural modeling framework that uses sampled traces with temporal interpolation and confidence-based filtering to evaluate cache and memory configurations.ResultsEvaluation on representative benchmarks demonstrates that this framework achieves practical accuracy (L2 cache errors of 2.64%, confidence-filtered L3 errors of 9.92%, bandwidth errors of 7.33%) while providing substantial speedup (26.8 × ) over cycle-accurate simulation, enabling rapid design space exploration.DiscussionWe demonstrate how this integrated framework enables systematic identification of both hardware optimizations (memory controller tuning, bank partitioning, NUMA configuration) and software optimizations (data layout restructuring, pre-fetching strategies, and memory-aware scheduling). Through this comprehensive treatment of the memory-centric analysis pipeline---from trace collection through architectural modeling to co-design application---we provide researchers and practitioners with practical techniques for addressing memory bottlenecks in contemporary computing systems.},
+	author = {Dhruv Gajaria and Prajwal Challa and Yasodha Suriyakuma and Jospeh Manzano and Nathan Tallent and Andr{\'e}s M{\'a}rquez},
+	date-added = {2026-05-20 13:04:28 -0700},
+	date-modified = {2026-05-20 13:08:41 -0700},
+	doi = {10.3389/fhpcp.2026.1801169},
+	journal = {Frontiers in High Performance Computing},
+	title = {An Integrated Framework for Memory-Centric Analysis: From Trace Collection to Co-Design},
+	url = {https://www.frontiersin.org/journals/high-performance-computing/articles/10.3389/fhpcp.2026.1801169},
+	volume = {4-2026},
+	year = {2026},
+	bdsk-url-1 = {https://www.frontiersin.org/journals/high-performance-computing/articles/10.3389/fhpcp.2026.1801169},
+	bdsk-url-2 = {https://doi.org/10.3389/fhpcp.2026.1801169}}
 
 @article{Gong:2026:opdr-order-preserving-dimreduce,
 	author = {Chengyu Gong and Gefei Shen and Luanzheng Guo and Nathan R. Tallent and Dongfang Zhao},
@@ -98,18 +112,6 @@ https://hpcrl.github.io/ICS2025-webpage/
 	year = {2026},
 	bdsk-url-1 = {https://doi.org/10.1109/ISPASS48437.2020.00047}}
 
-@article{Gajaria:2026:mem-centric-analysis,
-	author = {Dhruv Gajaria and Prajwal Challa and Yasodha Suriyakuma and Jospeh Manzano and Nathan Tallent and Andr{\'e}s M{\'a}rquez},
-	date-added = {2026-04-20 08:52:52 -0700},
-	date-modified = {2026-05-15 10:37:43 -0700},
-	journal = {Frontiers in High Performance Computing},
-	month = {5},
-	note = {To appear.},
-	title = {An Integrated Framework for Memory-Centric Analysis: From Trace Collection to Co-Design},
-	volume = {Emerging Trends in Software Tools for Exascale Application Development},
-	year = {2026},
-	bdsk-url-1 = {https://www.frontiersin.org/journals/high-performance-computing/articles/10.3389/fhpcp.2026.1801169/abstract}}
-
 @misc{dataflowdrs-www,
 	annote = {Arun Sathanur and Nathan R. Tallent
 Pacific Northwest National Laboratory},
@@ -177,8 +179,10 @@ https://hpcrl.github.io/ICS2025-webpage/
 	author = {Md Hasanur Rashid and Jesun Firoz and Nathan R. Tallent and Luanzheng Guo and Meng Tang and Dong Dai},
 	booktitle = {Proc. of the 40th IEEE Intl. Parallel and Distributed Processing Symp.},
 	date-added = {2025-12-22 17:32:10 -0800},
-	date-modified = {2026-03-09 14:40:42 -0700},
+	date-modified = {2026-05-23 09:14:31 -0700},
+	doi = {10.1109/IPDPS65963.2026.00112},
 	month = {5},
+	pages = {1372-1387},
 	publisher = {IEEE Computer Society},
 	series = {IPDPS '26},
 	title = {{QoSFlow}: Ensuring Service Quality of Distributed Workflows Using Interpretable Sensitivity Models},
@@ -190,8 +194,10 @@ https://hpcrl.github.io/ICS2025-webpage/
 	author = {Md Hasanur Rashid and Nathan R. Tallent and Forrest Sheng Bao and Dong Dai},
 	booktitle = {Proc. of the 40th IEEE Intl. Parallel and Distributed Processing Symp.},
 	date-added = {2025-12-22 17:28:01 -0800},
-	date-modified = {2026-02-24 09:49:29 -0800},
+	date-modified = {2026-05-23 09:19:03 -0700},
+	doi = {10.1109/IPDPS65963.2026.00110},
 	month = {5},
+	pages = {1343-1357},
 	publisher = {IEEE Computer Society},
 	series = {IPDPS '26},
 	title = {{CARAT}: Client-Side Adaptive {RPC} and Cache Co-Tuning for Parallel File Systems},
@@ -204,11 +210,13 @@ https://hpcrl.github.io/ICS2025-webpage/
 	author = {Meng Tang and Luanzheng Guo and Anthony Kougkas and Xian-He Sun and Nathan R. Tallent},
 	booktitle = {Proc. of the 40th IEEE Intl. Parallel and Distributed Processing Symp.},
 	date-added = {2025-12-22 17:21:28 -0800},
-	date-modified = {2026-02-24 09:49:36 -0800},
+	date-modified = {2026-05-23 09:14:06 -0700},
+	doi = {10.1109/IPDPS65963.2026.00076},
 	month = {5},
+	pages = {868-884},
 	publisher = {IEEE Computer Society},
 	series = {IPDPS '26},
-	title = {Characterization and Implications of Dataflow in {HPC} Workflows},
+	title = {Characterizing Dataflow for I/O-Aware Scheduling in {HPC} Workflows},
 	year = {2026},
 	bdsk-url-1 = {https://doi.org/10.1145/3581784.3607104},
 	bdsk-url-2 = {https://doi.org/10.1109/IPDPS64566.2025.00045}}
@@ -226,8 +234,10 @@ https://hpcrl.github.io/ICS2025-webpage/
 	author = {Boqiang Li and Luanzheng Guo and Buxin She and Nathan R. Tallent and Veronica Adetola and Rong Ge},
 	booktitle = {Proc. of the 40th IEEE Intl. Parallel and Distributed Processing Symp.},
 	date-added = {2025-12-16 11:13:55 -0800},
-	date-modified = {2026-02-24 09:49:41 -0800},
+	date-modified = {2026-05-23 09:19:48 -0700},
+	doi = {10.1109/IPDPS65963.2026.00100},
 	month = {5},
+	pages = {1204-1218},
 	publisher = {IEEE Computer Society},
 	series = {IPDPS '26},
 	title = {{PowerMorph}: Shaping {LLM} Training for Data Center Demand Response},
@@ -716,8 +726,10 @@ https://hpcrl.github.io/ICS2025-webpage/
 	author = {Boyuan Zhang and Luanzheng Guo and Jiannan Tian and Jinyang Liu and Daoce Wang and Chengming Zhang and Bo Fang and Fengguang Song and Jan Strube and Nathan R. Tallent and Dingwen Tao},
 	booktitle = {Proc. of the 40th IEEE Intl. Parallel and Distributed Processing Symp.},
 	date-added = {2024-03-16 07:41:37 -0700},
-	date-modified = {2026-02-24 09:49:23 -0800},
+	date-modified = {2026-05-23 09:21:02 -0700},
+	doi = {10.1109/IPDPS65963.2026.00056},
 	month = {5},
+	pages = {584-597},
 	publisher = {IEEE Computer Society},
 	series = {IPDPS '26},
 	title = {Accelerating AI Compression through Lightweight Lossless Encoding and Pipelined Workflows},
