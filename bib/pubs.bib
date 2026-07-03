@@ -1,18 +1,35 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Nathan R. Tallent at 2026-06-24 16:29:36 -0700 
+%% Created for Nathan R. Tallent at 2026-07-03 10:22:17 -0700 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
 
+@inproceedings{Sun:2026:SC-zocheck,
+	author = {Minqiu Sun and Xin Huang and Luanzheng Guo and Nathan R. Tallent and Kento Sato and Dong Dai},
+	booktitle = {Proc. of the Intl. Conf. for High Performance Computing, Networking, Storage and Analysis},
+	date-added = {2026-07-02 09:31:11 -0700},
+	date-modified = {2026-07-02 11:12:05 -0700},
+	month = {11},
+	title = {{ZOCheck}: {CPU}-Shadow Checkpointing for Zeroth-Order LLM {Fine}-Tuning},
+	year = {2026}}
+
+@inproceedings{Yang:2026:SC-ocean-cxl-emulator,
+	author = {Yiwei Yang and Mujahid Al Rafi and Kenza Bouasker and Zhen Peng and Xi Wang and Jesun Firoz and Sayan Ghosh and Ajay Panyala and Jie Li and Daniel Wong and Dong Li and Hyeran Jeon and Kevin Barker and Nathan R. Tallent and Andr{\'e}s Marquez and Luanzheng Guo},
+	booktitle = {Proc. of the Intl. Conf. for High Performance Computing, Networking, Storage and Analysis},
+	date-added = {2026-07-02 09:21:34 -0700},
+	date-modified = {2026-07-02 11:12:13 -0700},
+	month = {11},
+	title = {{OCEAN}: Open-Source {CXL} Emulation for Hyperscale Architecture and Networking},
+	year = {2026}}
+
 @article{Gajaria:2026:Frontiers-mem-centric-analysis,
-	abstract = {IntroductionThe memory wall phenomenon---where advances in processor performance significantly outpace those in memory subsystems-poses a fundamental challenge for contemporary computing systems. In memory-bound applications, memory subsystem behavior dominates performance, yet existing analysis approaches present significant limitations: detailed microarchitectural simulators require days to weeks to simulate modest workloads; hardware performance counters provide only aggregate statistics that obscure temporal and spatial access patterns; and scaled simulation approaches face challenges in capturing contention effects, bandwidth saturation, and interference patterns that emerge at larger scales. These limitations reflect a processor-centric design philosophy---in both performance analysis tools and system co-design methodologies---that is increasingly misaligned with memorybound workloads, where a detailed understanding of memory access patterns, cache hierarchy interactions, and contention is critical for effective optimization.MethodsThis paper presents an integrated framework for memory-centric analysis that enables effective hardware-software co-design. We describe practical trace collection techniques, including hardware assisted processor tracing with minimal overhead and portable software-based instrumentation with statistical sampling. We present multi-perspective analysis methods that examine memory behavior from temporal, sequential, spatial, and relational viewpoints, revealing distinct optimization opportunities invisible in aggregate metrics. For example, a data structure switch from an open to a closed hash table in the miniVite graph application---guided by spatial anticipation metrics---improved hardware prefetcher utilization and delivered a 1.8 × runtime improvement, a benefit invisible to aggregate performance counters. We detail an architectural modeling framework that uses sampled traces with temporal interpolation and confidence-based filtering to evaluate cache and memory configurations.ResultsEvaluation on representative benchmarks demonstrates that this framework achieves practical accuracy (L2 cache errors of 2.64%, confidence-filtered L3 errors of 9.92%, bandwidth errors of 7.33%) while providing substantial speedup (26.8 × ) over cycle-accurate simulation, enabling rapid design space exploration.DiscussionWe demonstrate how this integrated framework enables systematic identification of both hardware optimizations (memory controller tuning, bank partitioning, NUMA configuration) and software optimizations (data layout restructuring, pre-fetching strategies, and memory-aware scheduling). Through this comprehensive treatment of the memory-centric analysis pipeline---from trace collection through architectural modeling to co-design application---we provide researchers and practitioners with practical techniques for addressing memory bottlenecks in contemporary computing systems.},
 	author = {Dhruv Gajaria and Prajwal Challa and Yasodha Suriyakuma and Jospeh Manzano and Nathan Tallent and Andr{\'e}s M{\'a}rquez},
 	date-added = {2026-05-20 13:04:28 -0700},
-	date-modified = {2026-05-20 13:08:41 -0700},
+	date-modified = {2026-07-01 07:47:43 -0700},
 	doi = {10.3389/fhpcp.2026.1801169},
 	journal = {Frontiers in High Performance Computing},
 	title = {An Integrated Framework for Memory-Centric Analysis: From Trace Collection to Co-Design},
@@ -105,11 +122,11 @@ https://hpcrl.github.io/ICS2025-webpage/
 @unpublished{Tallent:2026:IPDPS-ESSA-keynote,
 	author = {Tallent, Nathan R.},
 	date-added = {2026-04-23 14:32:03 -0700},
-	date-modified = {2026-04-23 14:39:31 -0700},
-	keywords = {talk,keynote},
+	date-modified = {2026-07-03 09:44:33 -0700},
+	keywords = {talk,keynote,invited},
 	month = {5},
 	note = {7th Workshop on Extreme-Scale Storage and Analysis, in conjunction with 2026 IEEE International Parallel and Distributed Processing Symposium},
-	title = {Keynote: XXX},
+	title = {Keynote: Automating Performance Optimization of Data Flow Within HPC Workflows},
 	year = {2026},
 	bdsk-url-1 = {https://doi.org/10.1109/ISPASS48437.2020.00047}}
 
@@ -229,9 +246,9 @@ https://hpcrl.github.io/ICS2025-webpage/
 	author = {Prajwal Challa and Dhruv Gajaria and Marquez, Andr{\'e}s and Song Jiang and Tallent, Nathan R.},
 	booktitle = {Under Review: Proc. of the Intl. Conf. for High Performance Computing, Networking, Storage and Analysis (2026)},
 	date-added = {2025-12-17 07:43:43 -0800},
-	date-modified = {2026-06-16 11:02:15 -0700},
+	date-modified = {2026-07-03 09:28:11 -0700},
 	title = {{MemProphet}: Rapid Allocation Policies for Application-aware {CXL} Management},
-	year = {2100}}
+	year = {2050}}
 
 @inproceedings{Li:2026:IPDPS-PowerMorph,
 	abstract = {A critical performance challenge in distributed scientific workflows is coordinating tasks and data flows on distributed resources. To guide these decisions, this paper introduces data flow lifecycle analysis. Workflows are commonly represented using directed acyclic graphs (DAGs). Data flow lifecycles (DFL) enrich task DAGs with data objects and properties that describe data flow and how tasks interact with that flow. Lifecycles enable analysis from several important perspectives: task, data, and data flow. We describe representation, measurement, analysis, visualization, and opportunity identification for DFLs. Our measurement is both distributed and scalable, using space that is constant per data file. We use lifecycles and opportunity analysis to reason about improved task placement and reduced data movement for five scientific workflows with different characteristics. Case studies show improvements of 15\texttimes{}, 1.9\texttimes{}, and 10--30\texttimes{}. Our work is implemented in the DataLife tool.},
@@ -377,9 +394,9 @@ https://sc24.supercomputing.org/proceedings/poster/poster_files/post268s2-file3.
 	author = {Rizwan Ashraf and Luanzheng Guo and Nathan R. Tallent},
 	booktitle = {Submit...},
 	date-added = {2024-11-15 08:43:03 -0800},
-	date-modified = {2024-11-15 08:43:25 -0800},
+	date-modified = {2026-07-03 09:28:27 -0700},
 	title = {Identifying Outliers in AI-based Image Compression},
-	year = {2050}}
+	year = {2100}}
 
 @inproceedings{Ashraf:2024:BigData-poster:compression-outliers,
 	author = {Rizwan Ashraf and Luanzheng Guo and Nathan R. Tallent},
@@ -721,8 +738,8 @@ https://hpcrl.github.io/ICS2025-webpage/
 	abstract = {A critical performance challenge in distributed scientific workflows is coordinating tasks and data flows on distributed resources. To guide these decisions, this paper introduces data flow lifecycle analysis. Workflows are commonly represented using directed acyclic graphs (DAGs). Data flow lifecycles (DFL) enrich task DAGs with data objects and properties that describe data flow and how tasks interact with that flow. Lifecycles enable analysis from several important perspectives: task, data, and data flow. We describe representation, measurement, analysis, visualization, and opportunity identification for DFLs. Our measurement is both distributed and scalable, using space that is constant per data file. We use lifecycles and opportunity analysis to reason about improved task placement and reduced data movement for five scientific workflows with different characteristics. Case studies show improvements of 15\texttimes{}, 1.9\texttimes{}, and 10--30\texttimes{}. Our work is implemented in the DataLife tool.},
 	author = {Waqwoya Abebe and Jan Strube and Luanzheng Guo and Nathan R. Tallent and Oceane Bel and Steven Spurgeon and Christina Doty and Ali Jannesari},
 	date-added = {2024-04-12 13:56:27 -0700},
-	date-modified = {2024-04-12 13:56:43 -0700},
-	howpublished = {\url{https://arxiv.org/abs/2404.06638}},
+	date-modified = {2026-07-02 08:21:17 -0700},
+	howpublished = {https://arxiv.org/abs/2404.06638},
 	month = {4},
 	title = {{SAM-I-Am}: Semantic Boosting for Zero-shot Atomic-Scale Electron Micrograph Segmentation},
 	year = {2024},
@@ -746,9 +763,9 @@ https://hpcrl.github.io/ICS2025-webpage/
 	author = {Velugoti, Nanda and Manzano, Joseph and Marquez, Andr{\'e}s and Hale, Kyle and Tallent, Nathan R.},
 	booktitle = {Under Review: Proc. of the 2026 IEEE Conf. on Cluster Computing},
 	date-added = {2024-03-11 11:36:24 -0700},
-	date-modified = {2026-06-16 10:59:38 -0700},
+	date-modified = {2026-07-03 09:28:01 -0700},
 	title = {{MemPower}: Efficient Power Management with Fine-grained Memory Analysis and Modeling for HPC Workloads},
-	year = {2100}}
+	year = {2050}}
 
 @inproceedings{Firoz:2025:SSDBM-fastflow,
 	annote = {https://doi.org/10.1145/3733723.3733735},
@@ -1188,12 +1205,12 @@ Pacific Northwest National Laboratory},
 @misc{Tallent:talk:2019:modsim,
 	author = {Tallent, Nathan R.},
 	date-added = {2019-09-17 20:16:32 -0700},
-	date-modified = {2020-06-18 19:19:19 -0700},
+	date-modified = {2026-07-02 08:20:30 -0700},
 	howpublished = {Workshop on Modeling and Simulation of Systems and Applications},
 	keywords = {talk},
 	month = {8},
 	title = {Predicting and Improving {I/O} Throughput Using Reinforcement Learning},
-	url = {\url{https://www.bnl.gov/modsim2019/files/pdf/agenda.pdf}},
+	url = {https://www.bnl.gov/modsim2019/files/pdf/agenda.pdf},
 	year = {2019},
 	bdsk-url-1 = {https://www.bnl.gov/modsim2018/files/pdf/agenda.pdf},
 	bdsk-url-2 = {https://www.bnl.gov/modsim2019/files/pdf/agenda.pdf}}
@@ -1243,22 +1260,22 @@ Pacific Northwest National Laboratory},
 @misc{Tallent:talk:2018:modsim,
 	author = {Tallent, Nathan R.},
 	date-added = {2018-10-31 08:19:12 -0700},
-	date-modified = {2018-10-31 08:20:59 -0700},
+	date-modified = {2026-07-02 08:20:42 -0700},
 	howpublished = {Workshop on Modeling and Simulation of Systems and Applications},
 	keywords = {talk},
 	month = {8},
 	title = {Increasing Performance by Forecasting Job Failures in Distributed Workflows},
-	url = {\url{https://www.bnl.gov/modsim2018/files/pdf/agenda.pdf}},
+	url = {https://www.bnl.gov/modsim2018/files/pdf/agenda.pdf},
 	year = {2018},
 	bdsk-url-1 = {https://www.bnl.gov/modsim2018/files/pdf/agenda.pdf}}
 
-@inproceedings{Tallent:talk:2017:Dagstuhl-mispredicting,
+@inproceedings{Tallent:talk:2017:Dagstuhl-mispredicting-invited,
 	address = {Dagstuhl, Germany},
 	annote = {Keywords: Parallel programming, performance portability, productivity, scientific computing},
 	author = {Tallent, Nathan R.},
 	booktitle = {{Performance Portability in Extreme Scale Computing (Dagstuhl Seminar 17431)}},
 	date-added = {2018-10-31 08:10:56 -0700},
-	date-modified = {2026-05-01 10:26:04 -0700},
+	date-modified = {2026-07-03 09:46:28 -0700},
 	doi = {10.4230/DagRep.7.10.84},
 	editor = {Dubey, Anshu and Kelly, Paul H. J. and Mohr, Bernd and Vetter, Jeffrey S.},
 	issn = {2192-5283},
@@ -1713,10 +1730,10 @@ http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=17973},
 @article{Trader:2014:HPCwire-palm,
 	author = {Trader, Tiffany},
 	date-added = {2014-05-19 19:32:49 +0000},
-	date-modified = {2014-05-19 20:09:39 +0000},
+	date-modified = {2026-07-02 08:21:07 -0700},
 	journal = {HPCwire},
 	month = {5},
-	note = {\url{http://www.hpcwire.com/2014/05/12/tool-eases-application-performance-modeling/}},
+	note = {http://www.hpcwire.com/2014/05/12/tool-eases-application-performance-modeling/},
 	title = {Tool Eases Application Performance Modeling},
 	year = {2014}}
 
@@ -1731,10 +1748,9 @@ http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=17973},
 @misc{Tallent:2014:highlights-palm,
 	author = {Tallent, Nathan R. and Hoisie, Adolfy and Plata, Charity},
 	date-added = {2014-05-19 17:46:40 +0000},
-	date-modified = {2014-05-19 20:11:23 +0000},
+	date-modified = {2026-07-03 09:41:20 -0700},
 	howpublished = {PNNL Computational Sciences and Mathematics Division Research Highlights},
 	month = {5},
-	note = {\url{http://www.pnnl.gov/science/highlights/highlight.asp?id=2652}},
 	title = {{Palm}: Making Application Modeling Easier},
 	year = {2014}}
 
@@ -1757,11 +1773,11 @@ http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=17973},
 	annote = {and Georgia Tech Research Institute},
 	author = {Barker, Kevin and Benson, Thomas and Campbell, Dan and Ediger, David and Gioiosa, Roberto and Hoisie, Adolfy and Kerbyson, Darren and Manzano, Joseph and Marquez, Andres and Song, Leon and Tallent, Nathan R. and Tumeo, Antonino},
 	date-added = {2013-12-10 19:00:47 +0000},
-	date-modified = {2026-03-29 14:27:41 -0700},
+	date-modified = {2026-07-03 10:22:10 -0700},
+	doi = {https://github.com/pnnl/perfect},
 	month = {12},
 	organization = {Pacific Northwest National Laboratory},
 	title = {{PERFECT (Power Efficiency Revolution For Embedded Computing Technologies)} Benchmark Suite Manual},
-	url = {https://github.com/pnnl/perfect},
 	year = {2013},
 	bdsk-url-1 = {https://github.com/pnnl/perfect}}
 
