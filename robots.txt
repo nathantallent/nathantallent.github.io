@@ -4,6 +4,7 @@
 
 User-agent: *
 
+Disallow: /AGENTS.md
 Disallow: /admin
 Disallow: /archive
 Disallow: /bib
