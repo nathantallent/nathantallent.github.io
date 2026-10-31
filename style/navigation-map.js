@@ -2,9 +2,9 @@
 // in several HTML pages.
 
 // Menu items
-document.write('<div class="map">');
-document.write('  <p><a href="index.html">Home</a>');
-document.write('  <p><a href="research.html">Research</a>');
+var currentPage = window.location.pathname.split('/').pop() || 'index.html';
+document.write('<nav class="map" aria-label="Primary">');
+document.write('  <p><a href="index.html"' + (currentPage === 'index.html' ? ' aria-current="page"' : '') + '>Home</a></p>');
+document.write('  <p><a href="research.html"' + (currentPage === 'research.html' ? ' aria-current="page"' : '') + '>Research</a></p>');
 //document.write('  <p><a href="black-holes.html">Black holes</a>');
-document.write('</div>');
-
+document.write('</nav>');
